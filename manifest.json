@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Finger 24",
+  "version": "1.1",
+  "description": "根据特征库识别网站CMS类型",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["finger.json", "style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

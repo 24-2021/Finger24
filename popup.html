@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="nav-tabs">
+      <div class="nav-tab active" data-tab="scan">扫描结果</div>
+      <div class="nav-tab" data-tab="add">添加指纹</div>
+    </div>
+    
+    <!-- 扫描结果页面 -->
+    <div id="scan-tab" class="tab-content">
+      <div class="header">
+        <h3>网站指纹识别结果</h3>
+        <button id="refreshBtn" class="btn btn-primary">重新识别</button>
+      </div>
+      <div id="results">
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">正在扫描中...</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 添加指纹页面 -->
+    <div id="add-tab" class="tab-content" style="display:none;">
+      <div class="header">
+        <h3>添加新指纹</h3>
+      </div>
+      <form id="addFingerForm">
+        <div class="form-group">
+          <label for="cms">CMS名称</label>
+          <input type="text" id="cms" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="method">匹配方式</label>
+          <select id="method" class="form-control">
+            <option value="keyword">关键词</option>
+            <option value="icon_hash">Favicon哈希</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">匹配位置</label>
+          <select id="location" class="form-control">
+            <option value="body">页面内容</option>
+            <option value="title">页面标题</option>
+            <option value="header">HTTP头</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>关键词</label>
+          <div id="keywordContainer" class="keyword-container">
+            <div class="keyword-item">
+              <input type="text" class="form-control keyword-input" required>
+              <button type="button" class="btn btn-secondary remove-keyword" disabled>-</button>
+            </div>
+          </div>
+          <div class="keyword-actions">
+            <button type="button" id="addKeywordBtn" class="btn btn-secondary">添加关键词</button>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="type">类型</label>
+          <input type="text" id="type" class="form-control" value="其他">
+        </div>
+        
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="isImportant"> 标记为重要
+          </label>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">保存指纹</button>
+          <button type="button" id="exportBtn" class="btn btn-secondary">导出指纹</button>
+        </div>
+      </form>
+      <div id="addStatus" style="margin-top: 10px;"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
