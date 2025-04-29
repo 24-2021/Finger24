@@ -47,6 +47,13 @@
 - 使用Chrome的消息传递机制：
   - content.js 和 popup.js 之间通过消息通信
   - 支持 GET_MATCHES 和 SCAN_PAGE 两种消息类型
+  - 
+## 支持的浏览器
+
+- Google Chrome
+- Microsoft Edge
+- Firefox
+- Quark
 
 ## 用法
 
