@@ -83,5 +83,9 @@
 
 ♥感谢Aovs师傅优化iconhash识别函数
 
+♥感谢zR00t1的iconhash项目
+
+## 参考
+https://github.com/zR00t1/iconhash
 
 
