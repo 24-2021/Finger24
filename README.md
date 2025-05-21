@@ -79,9 +79,9 @@
 2025.04.25 发布Finger24 1.3版本
 
 ## 致谢
-感谢4ESTSEC师傅提出iconhash识别函数
+♥感谢4ESTSEC师傅提出iconhash识别函数
 
-感谢Aovs师傅优化iconhash识别函数
+♥感谢Aovs师傅优化iconhash识别函数
 
 
 
