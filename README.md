@@ -72,6 +72,9 @@
 ![image-20250425194449764](images/image-20250425194449764.png)
 
 ## 更新日志
+
+2025.05.23 发布Finger24 1.6版本 修复icon hash识别垃圾请求1700次的bug
+
 2025.05.21 发布Finger24 1.5版本 增加icon hash识别
 
 2025.05.10 发布Finger24 1.4版本 增加白名单功能，对某些网站跳过检测指纹
@@ -84,6 +87,8 @@
 ♥感谢Aovs师傅优化iconhash识别函数
 
 ♥感谢zR00t1的iconhash项目
+
+♥感谢n0t5提出bug
 
 ## 参考
 https://github.com/zR00t1/iconhash
