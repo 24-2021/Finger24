@@ -71,7 +71,13 @@
 
 ![image-20250425194449764](images/image-20250425194449764.png)
 
+### Firefox安装教程
+
+扩展->设置按钮->调试附加组件->临时加载附加组件->选择manifest.json文件
+
 ## 更新日志
+
+2025.05.30 在Finger24 1.6版本 增加Firefox版本
 
 2025.05.23 发布Finger24 1.6版本 修复icon hash识别垃圾请求1700次的bug
 
@@ -89,6 +95,8 @@
 ♥感谢zR00t1的iconhash项目
 
 ♥感谢n0t5提出bug
+
+♥感谢pplayerr提出bug
 
 ## 参考
 https://github.com/zR00t1/iconhash
