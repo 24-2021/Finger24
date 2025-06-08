@@ -53,6 +53,8 @@
 - Google Chrome
 - Microsoft Edge
 - Firefox
+  https://addons.mozilla.org/zh-CN/firefox/addon/finger-24/
+  
 - Quark
 
 ## 用法
